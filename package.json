@@ -1,7 +1,8 @@
 {
-  "name": "paper-kit-react",
+  "name": "DeepTea",
   "version": "1.0.0",
   "private": true,
+  "homepage": "https://AquamanRanda.io/DeepTea",
   "dependencies": {
     "classnames": "2.2.6",
     "moment": "2.24.0",
@@ -17,6 +18,8 @@
     "reactstrap": "8.0.0"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
