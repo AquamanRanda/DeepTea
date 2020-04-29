@@ -2,7 +2,7 @@
   "name": "DeepTea",
   "version": "1.0.0",
   "private": true,
-  "homepage": "https://AquamanRanda.io/DeepTea",
+  "homepage": "https://AquamanRanda.github.io/DeepTea",
   "dependencies": {
     "classnames": "2.2.6",
     "moment": "2.24.0",
