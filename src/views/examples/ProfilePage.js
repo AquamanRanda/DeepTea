@@ -13,7 +13,7 @@ import {
   TabPane,
   Container,
   Row,
-  Col
+  Col,
 } from "reactstrap";
 
 // core components
@@ -24,7 +24,7 @@ import DemoFooter from "components/Footers/DemoFooter.js";
 function ProfilePage() {
   const [activeTab, setActiveTab] = React.useState("1");
 
-  const toggle = tab => {
+  const toggle = (tab) => {
     if (activeTab !== tab) {
       setActiveTab(tab);
     }

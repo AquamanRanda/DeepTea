@@ -1,21 +1,3 @@
-/*!
-
-=========================================================
-* Paper Kit React - v1.0.0
-=========================================================
-
-* Product Page: https://www.creative-tim.com/product/paper-kit-react
-
-* Copyright 2019 Creative Tim (https://www.creative-tim.com)
-* Licensed under MIT (https://github.com/creativetimofficial/paper-kit-react/blob/master/LICENSE.md)
-
-* Coded by Creative Tim
-
-=========================================================
-
-* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-
-*/
 import React from "react";
 import ReactDOM from "react-dom";
 import { BrowserRouter, Route, Redirect, Switch } from "react-router-dom";
@@ -30,28 +12,50 @@ import NucleoIcons from "views/NucleoIcons.js";
 import LandingPage from "views/examples/LandingPage.js";
 import ProfilePage from "views/examples/ProfilePage.js";
 import RegisterPage from "views/examples/RegisterPage.js";
+import BusinessConsult from "views/verticals/BusinessConsult";
+import CareerCouncil from "views/verticals/CareerCouncil";
+import FinancialServices from "views/verticals/FinancialServices";
+import ProductTrain from "views/verticals/ProductTrain";
+import AboutUs from "views/AboutUs";
 // others
 
 ReactDOM.render(
   <BrowserRouter>
     <Switch>
-      <Route path="/index" render={props => <Index {...props} />} />
+      <Route path="/index" render={(props) => <Index {...props} />} />
       <Route
         path="/nucleo-icons"
-        render={props => <NucleoIcons {...props} />}
+        render={(props) => <NucleoIcons {...props} />}
       />
       <Route
         path="/landing-page"
-        render={props => <LandingPage {...props} />}
+        render={(props) => <LandingPage {...props} />}
       />
       <Route
         path="/profile-page"
-        render={props => <ProfilePage {...props} />}
+        render={(props) => <ProfilePage {...props} />}
       />
       <Route
         path="/register-page"
-        render={props => <RegisterPage {...props} />}
+        render={(props) => <RegisterPage {...props} />}
       />
+      <Route
+        path="/product-training"
+        render={(props) => <ProductTrain {...props} />}
+      />
+      <Route
+        path="/training-careercouncil"
+        render={(props) => <CareerCouncil {...props} />}
+      />
+      <Route
+        path="/financial services"
+        render={(props) => <FinancialServices {...props} />}
+      />
+      <Route
+        path="/business-consulting"
+        render={(props) => <BusinessConsult {...props} />}
+      />
+      <Route path="/about-us" render={(props) => <AboutUs {...props} />} />
       <Redirect to="/index" />
     </Switch>
   </BrowserRouter>,
