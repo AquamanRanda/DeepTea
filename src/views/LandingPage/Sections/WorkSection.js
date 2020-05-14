@@ -47,10 +47,7 @@ export default function WorkSection() {
 				<GridItem cs={12} sm={12} md={8}>
 					<h2 className={classes.title}>Talk to Us</h2>
 					<h4 className={classes.description}>
-						Divide details about your product or agency work into
-						parts. Write a few lines about each one and contact us
-						about any further collaboration. We will responde get
-						back to you in a couple of hours.
+						Hit us up with your details and we will get in touch with you.
 					</h4>
 					<form onSubmit={onSubmitHandler}>
 						<GridContainer>
@@ -115,8 +112,7 @@ export default function WorkSection() {
 									rows: 5,
 								}}
 							/>
-							<GridContainer justify='center'>
-								<GridItem
+						<GridItem
 									xs={12}
 									sm={12}
 									md={4}
@@ -125,7 +121,6 @@ export default function WorkSection() {
 										Send Message
 									</Button>
 								</GridItem>
-							</GridContainer>
 						</GridContainer>
 					</form>
 				</GridItem>
